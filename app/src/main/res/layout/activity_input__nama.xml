@@ -13,26 +13,33 @@
 
 
     <TextView
-        android:id="@+id/tv_nama"
+        android:id="@+id/lbl_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/nama_kamu" />
 
     <EditText
-        android:id="@+id/edit_nama"
+        android:id="@+id/txtnama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/nama_kamu"
         android:layout_marginBottom="16dp"
+        android:inputType="none"
         />
 
     <Button
-        android:id="@+id/tampil"
+        android:id="@+id/btntampil"
+        android:onClick="TampilNama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="@string/tampil" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label2"
+        />
 
 
 </LinearLayout>

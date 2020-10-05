@@ -8,18 +8,19 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Input_Nama extends AppCompatActivity {
-TextView tv_nama;
-EditText namaanda;
+    EditText textnama;
+    TextView hasil;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_input__nama);
-        tv_nama =findViewById(R.id.tv_nama);
-        namaanda =findViewById(R.id.edit_nama);
+        textnama =findViewById(R.id.txtnama);
+        hasil =findViewById(R.id.lbl_nama);
     }
-    public void tampil(View v){
-        tv_nama.setText("nama anda"+namaanda.getText());
+    public void TampilNama(View v){
+        hasil.setText("nama anda :"+textnama.getText());
     }
 }
